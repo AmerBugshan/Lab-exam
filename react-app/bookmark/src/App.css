@@ -1,0 +1,228 @@
+/* App.css - Dark Purple Theme + Tailwind class overrides */
+
+body {
+  background-color: #1e1e2f; /* dark background */
+  color: #e0dff2; /* light text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the app */
+.app-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #2c2c4c; /* dark purple */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(106, 13, 173, 0.6);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #9b59b6; /* purple light */
+}
+
+/* Error message styling */
+.p-3.mb-4.text-red-700.bg-red-100.rounded {
+  background-color: #601010 !important;
+  color: #f8d7da !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Loading and no bookmarks text */
+.text-center.p-4,
+.text-gray-500 {
+  color: #a8a5bf !important;
+}
+
+/* Bookmark Item Overrides */
+.bookmark-item {
+  background-color: #4b0082; /* purple-dark */
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(106, 13, 173, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.bookmark-item:hover {
+  background-color: #6a0dad; /* purple-medium */
+}
+
+/* Override links */
+.bookmark-item a.text-blue-600.hover\:text-blue-800 {
+  color: #e0dff2 !important;
+}
+
+.bookmark-item a.text-blue-600.hover\:text-blue-800:hover {
+  color: #d1b3ff !important;
+}
+
+/* Buttons */
+.bookmark-item button.px-4.py-2.mr-2.text-white.bg-blue-500.rounded.hover\:bg-blue-600,
+.bookmark-item button.px-4.py-2.text-white.bg-red-500.rounded.hover\:bg-red-600 {
+  color: #e0dff2 !important;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(106, 13, 173, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bookmark-item button.px-4.py-2.mr-2.text-white.bg-blue-500.rounded.hover\:bg-blue-600 {
+  background-color: #6a0dad !important;
+}
+
+.bookmark-item button.px-4.py-2.mr-2.text-white.bg-blue-500.rounded.hover\:bg-blue-600:hover {
+  background-color: #7b3fbf !important;
+  box-shadow: 0 4px 12px rgba(123, 63, 191, 0.8);
+}
+
+.bookmark-item button.px-4.py-2.text-white.bg-red-500.rounded.hover\:bg-red-600 {
+  background-color: #db3069 !important;
+  box-shadow: 0 2px 6px rgba(219, 48, 105, 0.5);
+}
+
+.bookmark-item button.px-4.py-2.text-white.bg-red-500.rounded.hover\:bg-red-600:hover {
+  background-color: #ff557f !important;
+  box-shadow: 0 4px 12px rgba(255, 85, 127, 0.8);
+}
+
+/* BookmarkForm overrides to dark theme */
+.bg-gray-100 {
+  background-color: #3a3453 !important;
+}
+
+.text-red-700 {
+  color: #db3069 !important;
+}
+
+.bg-red-100 {
+  background-color: #f9d9dd !important;
+}
+
+.border {
+  border-color: #6a0dad !important;
+}
+
+input.w-full.p-2.border.rounded {
+  background-color: #2c2c4c !important;
+  color: #e0dff2 !important;
+  border-width: 1.5px !important;
+  outline: none;
+  padding: 0.6rem 1rem; /* increased padding for better height */
+  margin-bottom: 0.75rem; /* spacing below inputs */
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.w-full.p-2.border.rounded::placeholder {
+  color: #a8a5bf;
+}
+
+input.w-full.p-2.border.rounded:focus {
+  border-color: #9b59b6 !important;
+  box-shadow: 0 0 8px #9b59b6 !important;
+}
+
+/* Buttons in form */
+button.px-4.py-2.text-white.bg-green-500.rounded.hover\:bg-green-600 {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: auto;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button.px-4.py-2.text-white.bg-green-500.rounded.hover\:bg-green-600:hover {
+  background-color: #5a9853 !important;
+}
+
+button.ml-2.bg-gray-300.rounded.hover\:bg-gray-400 {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button.ml-2.bg-gray-300.rounded.hover\:bg-gray-400:hover {
+  background-color: #9b59b6 !important;
+  color: #e0dff2;
+}
+
+/* Search bar container */
+.bookmark-search {
+  background-color: #3a3453;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.6);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Label style */
+.bookmark-search label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #9b59b6;
+}
+
+/* Input style */
+.bookmark-search input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1.5px solid #6a0dad;
+  border-radius: 6px;
+  background-color: #2c2c4c;
+  color: #e0dff2;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bookmark-search input::placeholder {
+  color: #a8a5bf;
+}
+
+.bookmark-search input:focus {
+  border-color: #9b59b6;
+  box-shadow: 0 0 8px #9b59b6;
+}
+
+/* Form container - already you have .bg-gray-100 for background and padding */
+.mb-6.p-4.bg-gray-100.rounded.shadow {
+  display: block;
+}
+
+/* Labels stacked with space */
+.mb-3 label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #d1b3ff;
+  font-weight: 600;
+}
+
+/* Buttons container inside BookmarkItem */
+.bookmark-item > div {
+  display: flex;
+  gap: 0.5rem;
+}
